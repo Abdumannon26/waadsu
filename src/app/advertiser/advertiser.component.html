@@ -1,0 +1,365 @@
+<section class="advertiser">
+  <main class="main">
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <div class="header__logo">
+            <img class="logo_w" src="/assets/img/logo-w.svg" alt="">
+            <img src="/assets/img/logo-main.svg" alt="">
+          </div>
+          <div class="header-nav">
+            <a class="nav__link" href="#">Ходокам</a>
+            <a class="nav__link" href="#">Рекламодателям</a>
+            <a class="nav__link" href="#">Партнерам</a>
+            <a class="nav__link" href="#">Контакты</a>
+          </div>
+          <a class="link-entry header__link-entry" href="#">Войти</a>
+          <div class="selection-language" (click)="isOpenLangMenu = !isOpenLangMenu" [class.open]="isOpenLangMenu">
+            <img class="select-icon" src="/assets/img/select-arrow.png" alt="">
+            <div class="select-value">
+              <img class="img1" src="/assets/img/en.svg" alt="">
+              <span>EN</span>
+            </div>
+            <ul class="select-menu">
+              <li class="select-option">
+                <img src="/assets/img/en.svg" alt="">
+                <span>EN</span>
+              </li>
+              <li class="select-option">
+                <img src="/assets/img/en.svg" alt="">
+                <span>EN</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="manage-ads">
+        <div class="flex container">
+          <div class="manage-ads__info">
+            <div class="info__title">
+              Управляй рекламой
+              в любой точке мира
+            </div>
+            <div class="info__subtitle">
+              Возможности платформы WAADSU позволяют подключить
+              все рюкзаки мира за несколько минут и
+              автоматически управлять контентом на экранах
+            </div>
+            <div class="info__btns">
+              <button class="launch-ad__btn">Запустить рекламу</button>
+<!--              <button class="start-earning__btn">Начать зарабатывать</button>-->
+            </div>
+          </div>
+          <div class="manage-ads__img">
+            <div>
+              <img class="advertising-bag1" src="/assets/img/advertising-bag1.png" alt="">
+              <img class="advertising-bag2" src="/assets/img/advertising-bag2.png" alt="">
+              <img class="advertising-bag4" src="/assets/img/advertising-bag4.png" alt="">
+              <img class="advertising-bag3" src="/assets/img/advertising-bag3.png" alt="">
+              <img class="advertising-bag5" src="/assets/img/advertising-bag5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="walkers">
+    <div class="container">
+      <div class="walkers-title">Выбери свой вариант для старта</div>
+      <div class="walkers-subtitle">или настрой индивидуально в личном кабинете</div>
+      <div class="walkers-content">
+        <div class="points-img">
+          <img src="/assets/img/points.svg" alt="">
+        </div>
+        <div class="walkers-item">
+          <div class="walkers-item__title">Микро</div>
+          <div class="walkers__block">
+            <div class="walkers-info">
+              <div class="walkers-number">4</div>
+              <div class="walkers-text">ходока</div>
+            </div>
+            <div class="walkers-schedule">
+              <div class="walkers-hour">
+                <input type="checkbox" id="hour" checked>
+                <label for="hour">4 часа в день</label>
+              </div>
+              <div class="walkers-days">
+                <input type="checkbox" id="day" checked>
+                <label for="day">7 дней</label>
+              </div>
+              <div class="walkers-contact">
+                <input type="checkbox" id="contact" checked>
+                <label for="contact">Контактов с рекламой</label>
+              </div>
+            </div>
+          </div>
+          <div class="walkers-block__end">
+            <div>
+              <img src="/assets/img/next.png" alt="">
+            </div>
+            <div class="walkers-result">373 333</div>
+            <div class="walkers-result__info">
+              Данные показатели действуют только в метро<br>
+
+              * Узнать показатели по вашей локации можно в ЛК
+            </div>
+            <div class="line"></div>
+            <div class="walkers-cost">₽ 20 160</div>
+          </div>
+        </div>
+        <div class="walkers-item">
+          <div class="walkers-item__title">Малый</div>
+          <div class="walkers__block">
+            <div class="walkers-info">
+              <div class="walkers-number">20</div>
+              <div class="walkers-text">ходоков</div>
+            </div>
+            <div class="walkers-schedule">
+              <div class="walkers-hour">
+                <input type="checkbox" id="hour2" checked>
+                <label for="hour2">4 часа в день</label>
+              </div>
+              <div class="walkers-days">
+                <input type="checkbox" id="day2" checked>
+                <label for="day2">7 дней</label>
+              </div>
+              <div class="walkers-contact">
+                <input type="checkbox" id="contact2" checked>
+                <label for="contact2">Контактов с рекламой</label>
+              </div>
+            </div>
+          </div>
+          <div class="walkers-block__end">
+            <div>
+              <img src="/assets/img/next.png" alt="">
+            </div>
+            <div class="walkers-result">1 866 667</div>
+            <div class="walkers-result__info">
+              Данные показатели действуют только в метро<br>
+
+              * Узнать показатели по вашей локации можно в ЛК
+            </div>
+            <div class="line"></div>
+            <div class="walkers-cost">₽ 100 800</div>
+          </div>
+        </div>
+        <div class="walkers-item">
+          <div class="walkers-item__title">Средний</div>
+          <div class="walkers__block">
+            <div class="walkers-info">
+              <div class="walkers-number">50</div>
+              <div class="walkers-text">ходоков</div>
+            </div>
+            <div class="walkers-schedule">
+              <div class="walkers-hour">
+                <input type="checkbox" id="hour3" checked>
+                <label for="hour3">4 часа в день</label>
+              </div>
+              <div class="walkers-days">
+                <input type="checkbox" id="day3" checked>
+                <label for="day3">7 дней</label>
+              </div>
+              <div class="walkers-contact">
+                <input type="checkbox" id="contact3" checked>
+                <label for="contact3">Контактов с рекламой</label>
+              </div>
+            </div>
+          </div>
+          <div class="walkers-block__end">
+            <div>
+              <img src="/assets/img/next.png" alt="">
+            </div>
+            <div class="walkers-result">4 666 667</div>
+            <div class="walkers-result__info">
+              Данные показатели действуют только в метро<br>
+
+              * Узнать показатели по вашей локации можно в ЛК
+            </div>
+            <div class="line"></div>
+            <div class="walkers-cost">₽ 252 000</div>
+          </div>
+        </div>
+        <div class="walkers-item">
+          <div class="walkers-item__title">Большой</div>
+          <div class="walkers__block">
+            <div class="walkers-info no-flex">
+              <div class="walkers-number">500</div>
+              <div class="walkers-text margin">ходоков</div>
+            </div>
+            <div class="walkers-schedule">
+              <div class="walkers-hour">
+                <input type="checkbox" id="hour4" checked>
+                <label for="hour4">4 часа в день</label>
+              </div>
+              <div class="walkers-days">
+                <input type="checkbox" id="day4" checked>
+                <label for="day4">7 дней</label>
+              </div>
+              <div class="walkers-contact">
+                <input type="checkbox" id="contact4" checked>
+                <label for="contact4">Контактов с рекламой</label>
+              </div>
+            </div>
+          </div>
+          <div class="walkers-block__end">
+            <div>
+              <img src="/assets/img/next.png" alt="">
+            </div>
+            <div class="walkers-result">46 666 667</div>
+            <div class="walkers-result__info">
+              Данные показатели действуют только в метро<br>
+
+              * Узнать показатели по вашей локации можно в ЛК
+            </div>
+            <div class="line"></div>
+            <div class="walkers-cost">₽ 2 520 000</div>
+          </div>
+        </div>
+        <div class="points2-img">
+          <img class="ovals" src="/assets/img/advertising__backpacks-img__after.svg" alt="">
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="set-up__ads">
+    <div class="set-up__ads-title">Настрой свою рекламу</div>
+    <div class="container flex">
+      <div class="macbook">
+        <div class="macbook-item">
+          <img src="/assets/img/screen.svg" alt="">
+          <img class="macbook-img" src="/assets/img/macbook.png" alt="">
+          <img class="macbook-bm"  src="/assets/img/bottom.svg" alt="">
+          <div>
+            <img class="staced" src="/assets/img/Stacked.png" alt="">
+          </div>
+
+        </div>
+      </div>
+      <div class="convenience">
+        <div class="convenience-title">Для вашего удобства в ЛК</div>
+        <div class="checkbox-content">
+          <div class="checkbox-item">
+            <input type="checkbox" id="geography" checked>
+            <label for="geography">Любая география показа</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="walkers" checked>
+            <label for="walkers">Выбор количества ходоков</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="duration" checked>
+            <label for="duration">Выбор продолжительности</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="launch" checked>
+            <label for="launch">Время запуска</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="Frequency" checked>
+            <label for="Frequency">Частота показов </label>
+          </div>
+          <button class="launch-ad__btn">Запустить рекламу</button>
+        </div>
+      </div>
+    </div>
+    <div class="set-up__ads-subtitle">
+      После завершения рекламной кампании вы получаете полный отчет в любом удобном для вас формате*
+    </div>
+  </div>
+  <div class="wrapper-form-contact">
+    <div class="container">
+      <div class="wrapper-form-contact__title">
+        Получить индивидуальное предложение
+      </div>
+      <div class="wrapper-form-contact__subtitle">
+        Компании с бюджетом выше 500 000₽ могут запросить индивидуальное сопровождение рекламных кампаний
+      </div>
+      <form class="contact-form wrapper-form-contact__contact-form" action="#">
+        <div class="contact-form__column contact-form__column_primary">
+          <div class="contact-form__row contact-form__row_between">
+            <div class="contact-form__column contact-form__column_50">
+              <input class="contact-form__input" type="text" placeholder="Название компании">
+            </div>
+            <div class="contact-form__column contact-form__column_50">
+              <input class="contact-form__input" type="text" placeholder="Номер телефона">
+            </div>
+          </div>
+          <div class="contact-form__row">
+            <div class="contact-form__column">
+              <input class="contact-form__input" type="text" placeholder="Электронная почта">
+            </div>
+          </div>
+        </div>
+        <div class="contact-form__column contact-form__column_second">
+          <div class="contact-form__row">
+            <div></div>
+            <div class="contact-form__column">
+              <button class="contact-form__submit">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="footer section">
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__column footer__column_first">
+          <div class="footer-logo footer__logo">
+            <img src="/assets/img/footer_logo.png" alt="">
+          </div>
+          <div class="footer-info footer__footer-info">
+            <p>Россия, Москва</p>
+            <p>тел: +7 (977) 781-43-90</p>
+            <a class="socials" href="#"><img src="/assets/img/instagramm.svg" alt=""></a>
+            <a class="socials" href="#"><img src="/assets/img/facebook.svg" alt=""></a>
+            <a class="socials" href="#"><img src="/assets/img/vk.svg" alt=""></a>
+            <a class="socials" href="#"><img src="/assets/img/youtube.svg" alt=""></a>
+            <a class="socials" href="#"><img src="/assets/img/telegramm.svg" alt=""></a>
+            <a href="#"><img src="/assets/img/watsapp.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="footer__column footer__column_second">
+          <div class="footer__column-header">Изучи</div>
+          <ul class="footer-menu footer__footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">О нас</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Контакты</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#"> Форум</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_three">
+          <div class="footer__column-header">Документы</div>
+          <ul class="footer-menu footer__footer-menu">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#">Сертификаты</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="#"> Политика</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column_four">
+          <div class="footer__column-header">Подпишись</div>
+          <div class="subscribe footer__subscribe">
+            <div class="subscribe__text">
+              В нашем телеграм-канале
+              все актуальные новости
+            </div>
+            <div class="subscribe-form">
+              <input class="subscribe-form__input" type="email" name="email" placeholder="Enter email Address">
+              <input class="subscribe-form__submit" type="submit" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
