@@ -20,16 +20,24 @@ import { EarnComponent } from './earn/earn.component';
   imports: [
     BrowserModule,
     NgImageSliderModule,
-    // RouterModule.forRoot([
-    //   {
-    //     path: '', component: AppComponent, children: [
-    //       {
-    //         path: 'information', loadChildren: () => import('./information/information.module')
-    //           .then(m => m.InformationModule)
-    //       },
-    //     ]
-    //   }
-    // ]),
+    RouterModule.forRoot([
+      {
+        path: '', component: AppComponent, children: [
+          {
+            path: 'advertiser', loadChildren: () => import('./advertiser/advertiser.module')
+              .then(m => m.AdvertiserModule)
+          },
+          {
+            path: 'led-backpack', loadChildren: () => import('./led-backpack/led-backpack.module')
+              .then(m => m.LedBackpackModule)
+          },
+          {
+            path: 'video-instruction', loadChildren: () => import('./video-instruction/video-instruction.module')
+              .then(m => m.VideoInstructionModule)
+          },
+        ]
+      }
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
