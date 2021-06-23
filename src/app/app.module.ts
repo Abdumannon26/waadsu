@@ -8,6 +8,7 @@ import { AdvertiserComponent } from './advertiser/advertiser.component';
 import { VideoInstructionComponent } from './video-instruction/video-instruction.component';
 import { LedBackpackComponent } from './led-backpack/led-backpack.component';
 import { EarnComponent } from './earn/earn.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { EarnComponent } from './earn/earn.component';
     AdvertiserComponent,
     VideoInstructionComponent,
     LedBackpackComponent,
-    EarnComponent
+    EarnComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,10 @@ import { EarnComponent } from './earn/earn.component';
     RouterModule.forRoot([
       {
         path: '', component: AppComponent, children: [
+          {
+            path: 'main', loadChildren: () => import('./main/main.module')
+              .then(m => m.MainModule)
+          },
           {
             path: 'advertiser', loadChildren: () => import('./advertiser/advertiser.module')
               .then(m => m.AdvertiserModule)
